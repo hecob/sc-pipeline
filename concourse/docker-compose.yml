@@ -32,8 +32,10 @@ services:
     environment:
       CONCOURSE_TSA_HOST: concourse-web
   artifactory:
-    build:
-      context: .
-      dockerfile: Dockerfile-artifactory
+    image: localhost:5000/docker.bintray.io/jfrog/artifactory-oss:5.5.1
+    volumes: ["./artifactory.config.import.yml:/var/opt/jfrog/artifactory/etc/artifactory.config.import.yml"]
+#    build:
+#      context: .
+#      dockerfile: Dockerfile-artifactory
     ports:
       - "8081:8081"
