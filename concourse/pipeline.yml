@@ -307,7 +307,6 @@ jobs:
       GIT_PRIVATE_KEY: ((github-private-key))
 
 common-params: &common-params
-  HOST_IP: ((host-ip))
   _JAVA_OPTIONS: -Djava.security.egd=file:/dev/./urandom
   BUILD_OPTIONS: ((build-options))
   GIT_EMAIL: ((git-email))
