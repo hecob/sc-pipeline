@@ -7,7 +7,6 @@ image_resource:
     repository: {{HOST_IP}}:5000/springcloud/pipeline-base
     tag: "0.7.0"
     insecure_registries: [ "{{HOST_IP}}:5000" ]
-
 inputs:
   - name: version
   - name: tools
@@ -22,3 +21,4 @@ run:
 params:
   GIT_EMAIL:
   GIT_NAME:
+  HOST_IP:
