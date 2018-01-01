@@ -3,10 +3,7 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: localhost:5000/springcloud/pipeline-base
-    tag: 0.7.0
-    insecure_registries: [ "localhost:5000" ]
-
+    repository: localhost:5000/springcloud/pipeline-base:0.7.0
 inputs:
   - name: tools
   - name: repo
