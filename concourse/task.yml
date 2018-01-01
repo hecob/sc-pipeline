@@ -6,8 +6,6 @@ image_resource:
     repository: {{HOST_IP}}:5000/springcloud/pipeline-base
     tag: "0.7.0"
     insecure_registries: [ "{{HOST_IP}}:5000" ]
-params:
-  HOST_IP:
 inputs:
   - name: tools
   - name: repo
