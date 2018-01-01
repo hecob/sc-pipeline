@@ -4,9 +4,9 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: ((host-ip)):5000/springcloud/pipeline-base
+    repository: $(./whats_my_ip.sh):5000/springcloud/pipeline-base
     tag: "0.7.0"
-    insecure_registries: [ "((host-ip)):5000" ]
+    insecure_registries: [ "$(./whats_my_ip.sh):5000" ]
 
 inputs:
   - name: version
